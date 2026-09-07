@@ -1,5 +1,5 @@
 # Atlas container lab image
-FROM node:99-alpine
+FROM node:20-alpine
 
 WORKDIR /app
 
@@ -11,7 +11,7 @@ RUN npm install
 COPY . .
 
 # Document the port the container listens on
-EXPOSE 3000
+EXPOSE 5000
 
 # Start the app
 CMD ["npm", "start"]
